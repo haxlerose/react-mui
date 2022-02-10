@@ -4,5 +4,5 @@
 
 import { application } from "./application"
 
-import MuiController from "./mui_controller.jsx"
-application.register("mui", MuiController)
+import ButtonController from "./button_controller.jsx"
+application.register("button", ButtonController)

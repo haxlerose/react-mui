@@ -4,13 +4,13 @@ import * as React from 'react'
 import Button from '@mui/material/Button'
 
 export default class extends Controller {
-  static targets = ['container']
+  static targets = ['submit']
 
   connect() {
-    ReactDOM.render(this.button(), this.containerTarget)
+    ReactDOM.render(this.button(), this.submitTarget)
   }
 
   button() {
-    return <Button variant="contained">Hello World</Button>
+    return <Button variant="contained" type="submit" name="commit" data-disable-with="Submit">Submit</Button>
   }
 }
