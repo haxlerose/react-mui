@@ -1,4 +1,9 @@
 <%= form_with url: search_path, method: :get do |f| %>
-  <%= content_tag :div, '', data: { controller: 'text-field', text_field_target: 'field', text_field_name_value: 'q', text_field_id_value: 'q' } %>
-  <%= content_tag :div, '', data: { controller: 'button', button_target: 'submit', button_display_text_value: 'Submit' } %>
+  <%= content_tag :div, '', data: { controller: 'text-field',
+                                    text_field_target: 'element',
+                                    text_field_attributes_value: { 'name': 'q', 'id': 'q' } } %>
+  <%= content_tag :div, '', data: { controller: 'button',
+                                    button_target: 'element',
+                                    button_text_value: 'Submit',
+                                    button_attributes_value: { 'variant': 'contained', 'data-disable-with': 'Submit', 'name': 'commit', 'type': 'submit' } } %>
 <% end %>
