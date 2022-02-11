@@ -5,4 +5,6 @@
 import { application } from "./application"
 
 import ButtonController from "./button_controller.jsx"
+import TextFieldController from "./text_field_controller.jsx"
 application.register("button", ButtonController)
+application.register("text-field", TextFieldController)
