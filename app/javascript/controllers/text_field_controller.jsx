@@ -4,11 +4,11 @@ import * as React from 'react'
 import TextField from '@mui/material/TextField'
 
 export default class extends Controller {
-  static targets = ['element']
+  static targets = ['textFieldElement']
   static values = { attributes: Object }
 
   connect() {
-    ReactDOM.render(this.textField(), this.fieldTarget)
+    ReactDOM.render(this.textField(), this.textFieldElementTarget)
   }
 
   textField() {

@@ -4,11 +4,11 @@ import * as React from 'react'
 import Button from '@mui/material/Button'
 
 export default class extends Controller {
-  static targets = ['element']
+  static targets = ['buttonElement']
   static values = { attributes: Object, text: String }
 
   connect() {
-    ReactDOM.render(this.button(), this.submitTarget)
+    ReactDOM.render(this.button(), this.buttonElementTarget)
   }
 
   button() {

@@ -7,6 +7,7 @@
     "@hotwired/stimulus": "^3.0.1",
     "@hotwired/turbo-rails": "^7.1.1",
     "@mui/material": "^5.4.1",
+    "@mui/x-data-grid": "^5.5.1",
     "esbuild": "^0.14.21",
     "react": "^17.0.2",
     "react-dom": "^17.0.2"

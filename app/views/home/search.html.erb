@@ -1,3 +1,8 @@
+<%= content_tag :div, '', data: { controller: 'link',
+                                  link_target: 'linkElement',
+                                  link_text_value: 'Search',
+                                  link_attributes_value: { 'href': root_path, 'variant': 'body2', 'data-action': 'click->link#confirmClick' } } %>
+
 <% @results.each do |result| %>
   <div>
     <span>
