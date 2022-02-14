@@ -4,11 +4,5 @@
 
 import { application } from "./application"
 
-import ButtonController from "./button_controller.jsx"
-import DataGridController from "./data_grid_controller.jsx"
-import LinkController from "./link_controller.jsx"
-import TextFieldController from "./text_field_controller.jsx"
-application.register("button", ButtonController)
-application.register("data-grid", DataGridController)
-application.register("link", LinkController)
-application.register("text-field", TextFieldController)
+import HomeController from "./home_controller.jsx"
+application.register("home", HomeController)
