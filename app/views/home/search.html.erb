@@ -1,14 +1,9 @@
-<%= content_tag :div, '', data: { controller: 'link',
-                                  link_target: 'linkElement',
-                                  link_text_value: 'Search',
-                                  link_attributes_value: { 'href': root_path, 'variant': 'body2', 'data-action': 'click->link#confirmClick' } } %>
-
-<% @results.each do |result| %>
-  <div>
-    <span>
-      <%= result['title'] %>
-      <%= result['year'] %>
-      <%= result['titleType'] %>
-    </span>
-  </div>
+<%= form_with url: results_path, method: :get do |f| %>
+  <%= content_tag :div, '', data: { controller: 'text-field',
+                                    text_field_target: 'textFieldElement',
+                                    text_field_attributes_value: { 'variant': 'outlined', 'name': 'q', 'id': 'q' } } %>
+  <%= content_tag :div, '', data: { controller: 'button',
+                                    button_target: 'buttonElement',
+                                    button_text_value: 'Submit',
+                                    button_attributes_value: { 'variant': 'contained', 'data-disable-with': 'Submit', 'name': 'commit', 'type': 'submit' } } %>
 <% end %>

@@ -8,7 +8,6 @@ export default class extends Controller {
   static values = { attributes: Object, text: String }
 
   connect() {
-    console.log('link controller')
     ReactDOM.render(this.link(), this.linkElementTarget)
   }
 

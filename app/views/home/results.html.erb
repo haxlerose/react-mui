@@ -1,0 +1,10 @@
+<%= content_tag :div, '', data: { controller: 'link',
+                                  link_target: 'linkElement',
+                                  link_text_value: 'Search',
+                                  link_attributes_value: { 'href': root_path, 'variant': 'body2', 'data-action': 'click->link#confirmClick' } } %>
+<%= content_tag :div, '', data: { controller: 'data-grid',
+                                  data_grid_target: 'dataGridElement',
+                                  data_grid_column_names_value: @header,
+                                  data_grid_row_data_value: @results,
+                                  data_grid_style_value: { 'display': 'flex', 'height': '24rem' },
+                                  data_grid_options_value: { 'rowsPerPageOptions': [5, 10, 25, 100], 'initialState': { 'pagination': { 'pageSize': 5 } } } } %>
